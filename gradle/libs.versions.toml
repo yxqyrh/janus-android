@@ -1,0 +1,115 @@
+[versions]
+agp = "8.9.1"
+kotlin = "2.0.21"
+kotlinKsp = "2.0.21-1.0.25"
+kotlinCoroutines = "1.5.0"
+coreKtx = "1.16.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+legacy-support = "1.0.0"
+material = "1.12.0"
+constraintlayout = "2.2.1"
+lifecycleextension = "2.2.0"
+lifecycleLivedataKtx = "2.8.7"
+lifecycleViewmodelKtx = "2.8.7"
+lifecycleRuntimeKtx = "2.8.7"
+lifecycleReactiveStreamsKtx = "2.8.7"
+navigationFragmentKtx = "2.8.9"
+navigationUiKtx = "2.8.9"
+multidex = "2.0.1"
+recycleview = "1.2.1"
+
+dataStore = "1.0.0-rc02"
+roomversion = "2.6.1"
+sqliteJdbc = "3.46.1.0"
+retrofitVersion = "2.6.0"
+jakewhartonretrofit = "0.9.2"
+moshiversion = "1.15.2"
+bugly = "4.1.9.3"
+okhttp3 = "3.12.1"
+okhttp3-logging-interceptor = "3.5.0"
+webrtc = "1.0.32006"
+java-websocket = "1.5.2"
+scarlet = "0.2.4-alpha1"
+scarlet1 = "0.1.12"
+rxjava = "3.0.13"
+rxandroid = "3.0.0"
+rxpermission = "2.x.v0.9.4-fork"
+baseRecycleviewAdapter = "3.0.4"
+superBottomSheet = "2.0.0"
+navigationFragmentKtxVersion = "2.9.0"
+navigationUiKtxVersion = "2.9.0"
+
+
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-lifecycle-extesions = {group = "androidx.lifecycle", name = "lifecycle-extensions", version.ref = "lifecycleextension"}
+androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+androidx-lifecycle-runtime-ktx = {group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx"}
+androidx-lifecycle-reactivestreams-ktx = {group = "androidx.lifecycle", name = "lifecycle-reactivestreams-ktx", version.ref = "lifecycleReactiveStreamsKtx"}
+
+androidx-room = {group = "androidx.room", name = "room-runtime", version.ref = "roomversion"}
+androidx-room-ktx = {group = "androidx.room", name = "room-ktx", version.ref = "roomversion"}
+androidx-room-rxjava3 = {group = "androidx.room", name = "room-rxjava3", version.ref = "roomversion"}
+androidx-room-testing = {group = "androidx.room", name = "room-testing", version.ref = "roomversion"}
+androidx-room-comile = {group = "androidx.room", name = "room-compiler", version.ref = "roomversion"}
+sqite-jdbc = {group = "org.xerial", name = "sqlite-jdbc", version.ref = "sqliteJdbc"}
+
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
+androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
+androidx-legacy-support = {group = "androidx.legacy", name = "legacy-support-v4", version.ref = "legacy-support" }
+androidx-multidex = {group = "androidx.multidex", name = "multidex", version.ref = "multidex" }
+androidx-recycleview = {group = "androidx.recyclerview", name = "recyclerview", version.ref = "recycleview"}
+
+squareup-okhttp3 = {group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp3"}
+squareup-okhttp3-logging-interceptor = {group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp3-logging-interceptor"}
+squareup-retrofit2 = {group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofitVersion"}
+squareup-retrofit2-convertgson = {group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofitVersion"}
+jakewharton-retrofit = {group = "com.jakewharton.retrofit", name = "retrofit2-kotlin-coroutines-adapter", version.ref = "jakewhartonretrofit"}
+
+squareup-moshi = {group = "com.squareup.moshi", name = "moshi", version.ref = "moshiversion"}
+squareup-moshi-kotlin = {group = "com.squareup.moshi", name = "moshi-kotlin", version.ref = "moshiversion"}
+squareup-moshi-adapters = {group = "com.squareup.moshi", name = "moshi-adapters", version.ref = "moshiversion"}
+squareup-moshi-kotlin-codegen = {group = "com.squareup.moshi", name = "moshi-kotlin-codegen", version.ref = "moshiversion"}
+
+tencent-bugly = { group = "com.tencent.bugly", name = "crashreport", version.ref = "bugly"}
+webrtc = {group = "org.webrtc", name = "google-webrtc", version.ref = "webrtc"}
+java-websocket = {group = "org.java-websocket", name = "Java-WebSocket", version.ref = "java-websocket"}
+
+androidx-datastore = {group = "androidx.datastore", name = "datastore", version.ref = "dataStore"}
+androidx-datastore-preferences = {group = "androidx.datastore", name = "datastore-preferences", version.ref = "dataStore"}
+androidx-datastore-rxjava3 = {group = "androidx.datastore", name = "datastore-rxjava3", version.ref = "dataStore"}
+androidx-datastore-preferences-rxjava3 = {group = "androidx.datastore", name = "datastore-preferences-rxjava3", version.ref = "dataStore"}
+
+kotlin-coroutines-core = {group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinCoroutines"}
+kotlin-coroutines-android = {group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinCoroutines"}
+
+
+tinder-scarlet = { group = "com.github.tinder.scarlet", name = "scarlet", version.ref="scarlet"}
+tinder-scarlet-websocket-okhttp = { group = "com.github.tinder.scarlet", name = "scarlet-protocol-websocket-okhttp", version.ref="scarlet"}
+tinder-scarlet-lifecycle-android = { group = "com.github.tinder.scarlet", name = "scarlet-lifecycle-android", version.ref="scarlet"}
+tinder-scarlet-stream-adapter-rxjava2 = { group = "com.github.tinder.scarlet", name = "scarlet-stream-adapter-rxjava2", version.ref="scarlet"}
+
+rxjava = {group = "io.reactivex.rxjava3", name = "rxjava",version.ref = "rxjava"}
+rxandroid = {group = "io.reactivex.rxjava3", name = "rxandroid", version.ref = "rxandroid"}
+rxpermission = {group = "com.github.scm573", name = "RxPermissions",version.ref = "rxpermission"}
+baseRecycleviewAdapter = {group = "com.github.CymChad",name = "BaseRecyclerViewAdapterHelper", version.ref = "baseRecycleviewAdapter"}
+superBottomSheet = {group = "com.github.andrefrsousa", name = "SuperBottomSheet",version.ref = "superBottomSheet"}
+navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtxVersion" }
+navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtxVersion" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-ksp = {id = "com.google.devtools.ksp", version.ref = "kotlinKsp"}
+
