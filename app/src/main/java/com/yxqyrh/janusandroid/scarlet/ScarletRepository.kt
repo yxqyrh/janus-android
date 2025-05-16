@@ -36,13 +36,6 @@ class ScarletRepository(private val scarletService: ScarletService) {
     private val context = VideoRoomApplication.application
     private val compositeDisposable = CompositeDisposable()
 
-    /**
-     * Observer对象只会在数据更新的时候传递数据
-     * LiveData对象则无论数据是否更新都会传递数据
-     * 因为这里的Repository使用了单例模式
-     * 为了避免ViewModel创建时的重复响应
-     * 改用PublishProcessor
-     */
     private val responseProcessor = PublishProcessor.create<StateData<ResponseModel>>()
 
     val createSessionProcessor = PublishProcessor.create<StateData<ResponseModel>>()

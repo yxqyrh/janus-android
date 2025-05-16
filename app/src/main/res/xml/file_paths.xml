@@ -2,7 +2,7 @@
 <paths>
     <external-path
         name="files_root"
-        path="Android/data/in.minewave.janusvideoroom/" />
+        path="Android/data/com.yxqyrh.janusandroid/" />
     <external-path
         name="external_storage_root"
         path="." />

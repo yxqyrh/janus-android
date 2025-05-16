@@ -12,21 +12,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="发起会议"
+            android:text="@string/create_room"
             android:textSize="24sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="会议主题:"
+            android:text="@string/room_title"
             android:textSize="12sp" />
 
         <EditText
             android:id="@+id/edit_text_theme"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="选填"
+            android:hint="@string/string_optional"
             android:inputType="textAutoComplete"
             android:maxLines="1"
             android:padding="10dp"
@@ -36,14 +36,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="会议号:"
+            android:text="@string/room_id"
             android:textSize="12sp" />
 
         <EditText
             android:id="@+id/edit_text_room"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="选填"
+            android:hint="@string/string_optional"
             android:inputType="number"
             android:padding="10dp"
             android:textSize="18sp" />
@@ -52,14 +52,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="管理密码:"
+            android:text="@string/admin_key"
             android:textSize="12sp" />
 
         <EditText
             android:id="@+id/edit_text_admin_password"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="选填"
+            android:hint="@string/string_optional"
             android:inputType="textPassword"
             android:padding="10dp"
             android:textSize="18sp" />
@@ -68,14 +68,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="会议密码:"
+            android:text="@string/room_key"
             android:textSize="12sp" />
 
         <EditText
             android:id="@+id/edit_text_password"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="选填"
+            android:hint="@string/string_optional"
             android:inputType="textPassword"
             android:padding="10dp"
             android:textSize="18sp" />
@@ -89,7 +89,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="公开会议:"
+                android:text="@string/is_public"
                 android:textSize="12sp" />
 
             <androidx.appcompat.widget.SwitchCompat

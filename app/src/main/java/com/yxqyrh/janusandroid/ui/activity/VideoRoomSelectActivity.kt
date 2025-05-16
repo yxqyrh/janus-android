@@ -90,13 +90,13 @@ class VideoRoomSelectActivity : BaseVMActivity<ActivityVideoRoomSelectBinding, V
             when (it.status) {
                 Status.SUCCESS -> {
                     it.data?.data?.id?.let { handleId -> mViewModel.handleIdRef.set(handleId) }
-                    binding.textResult.text = "注册handle成功"
+                    binding.textResult.text = getString(R.string.register_handle_success)
                     lifecycleScope.launch {
                         mViewModel.getRoomList()
                     }
                 }
                 Status.ERROR -> {
-                    binding.textResult.text = "注册handle失败"
+                    binding.textResult.text = getString(R.string.register_handle_failed)
                 }
                 else -> {
                 }
@@ -106,11 +106,11 @@ class VideoRoomSelectActivity : BaseVMActivity<ActivityVideoRoomSelectBinding, V
         mViewModel.getRoomListLiveData.observe(this) {
             when (it.status) {
                 Status.SUCCESS -> {
-                    binding.textResult.text = "获取房间列表成功"
+                    binding.textResult.text = getString(R.string.fetch_room_list_success)
                     it?.data?.pluginData?.data?.list?.let { roomList -> roomAdapter.setList(roomList) }
                 }
                 Status.ERROR -> {
-                    binding.textResult.text = "获取房间列表失败"
+                    binding.textResult.text = getString(R.string.fetch_room_list_failed)
                 }
                 else -> {
                 }
@@ -120,13 +120,13 @@ class VideoRoomSelectActivity : BaseVMActivity<ActivityVideoRoomSelectBinding, V
         mViewModel.createRoomLiveData.observe(this) {
             when (it.status) {
                 Status.SUCCESS -> {
-                    binding.textResult.text = "创建房间成功"
+                    binding.textResult.text = getString(R.string.create_room_success)
                     it?.data?.pluginData?.data?.room?.let { room ->
                         startVideoRoomActivity(mViewModel.handleIdRef.get(), room, null, true)
                     }
                 }
                 Status.ERROR -> {
-                    binding.textResult.text = "创建房间失败"
+                    binding.textResult.text = getString(R.string.create_room_failed)
                 }
                 else -> {
                 }
@@ -136,7 +136,7 @@ class VideoRoomSelectActivity : BaseVMActivity<ActivityVideoRoomSelectBinding, V
         mViewModel.joinRoomLiveData.observe(this) {
             when (it.status) {
                 Status.SUCCESS -> {
-                    binding.textResult.text = "加入房间成功"
+                    binding.textResult.text = getString(R.string.join_room_success)
                     it.data?.pluginData?.data?.room?.let { room ->
                         it.data.pluginData.data.publishers?.let { publishers ->
                             startVideoRoomActivity(mViewModel.handleIdRef.get(), room, publishers, true)
@@ -144,7 +144,7 @@ class VideoRoomSelectActivity : BaseVMActivity<ActivityVideoRoomSelectBinding, V
                     }
                 }
                 Status.ERROR -> {
-                    binding.textResult.text = "加入房间失败"
+                    binding.textResult.text = getString(R.string.join_room_success)
                 }
                 else -> {
                 }

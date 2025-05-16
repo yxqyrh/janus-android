@@ -45,10 +45,10 @@ class VideoCallSelectActivity : BaseVMActivity<ActivityVideoCallSelectBinding, V
             when (it.status) {
                 Status.SUCCESS -> {
                     it.data?.data?.id?.let { handleId -> mViewModel.handleIdRef.set(handleId) }
-                    binding.textResult.text = "注册handle成功"
+                    binding.textResult.text = getString(R.string.register_handle_success)
                 }
                 Status.ERROR -> {
-                    binding.textResult.text = "注册handle失败"
+                    binding.textResult.text = getString(R.string.register_handle_failed)
                 }
                 else -> {
                 }
@@ -58,13 +58,13 @@ class VideoCallSelectActivity : BaseVMActivity<ActivityVideoCallSelectBinding, V
         mViewModel.registerUserLiveData.observe(this) {
             when (it.status) {
                 Status.SUCCESS -> {
-                    binding.textResult.text = "注册用户成功"
+                    binding.textResult.text = getString(R.string.register_user_succes)
                     lifecycleScope.launch {
                         mViewModel.getVideoCallUserList()
                     }
                 }
                 Status.ERROR -> {
-                    binding.textResult.text = "注册用户失败"
+                    binding.textResult.text = getString(R.string.register_user_failed)
                 }
                 else -> {
                 }
@@ -74,7 +74,7 @@ class VideoCallSelectActivity : BaseVMActivity<ActivityVideoCallSelectBinding, V
         mViewModel.videoCallUserListLiveData.observe(this) {
             when (it.status) {
                 Status.SUCCESS -> {
-                    binding.textResult.text = "获取用户列表成功"
+                    binding.textResult.text = getString(R.string.fetch_user_list_success)
 
                     binding.textRegister.visibility = View.GONE
                     binding.buttonRegister.visibility = View.GONE
@@ -87,7 +87,7 @@ class VideoCallSelectActivity : BaseVMActivity<ActivityVideoCallSelectBinding, V
                     }
                 }
                 Status.ERROR -> {
-                    binding.textResult.text = "获取用户列表失败"
+                    binding.textResult.text = getString(R.string.fetch_user_list_failed)
                 }
                 else -> {
                 }

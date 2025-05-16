@@ -1,5 +1,31 @@
 <resources>
-    <string name="app_name">JanusVideoRoom</string>
-    <string name="ok">确定</string>
-    <string name="cancel">取消</string>
+    <string name="app_name">JanusAndroid</string>
+    <string name="OK">ok</string>
+    <string name="cancel">cancel</string>
+    <string name="launch_activity">Launch\nActivity</string>
+    <string name="join_room">Join</string>
+    <string name="refresh_rooms">Refresh</string>
+    <string name="setup_room">Setup</string>
+    <string name="register_handle_success">register handle success</string>
+    <string name="register_handle_failed">register handle failed</string>
+    <string name="register_user_succes">register user succes</string>
+    <string name="register_user_failed">register user failed</string>
+    <string name="fetch_room_list_success">fetch room list success</string>
+    <string name="fetch_room_list_failed">fetch room list failed</string>
+    <string name="create_room_success">create room success</string>
+    <string name="create_room_failed">create room failed</string>
+    <string name="join_room_success">joined room success</string>
+    <string name="join_room_failed">joined room success</string>
+    <string name="fetch_user_list_failed">fetch user list failed</string>
+    <string name="fetch_user_list_success">fetch user list success</string>
+    <string name="create_room">create room</string>
+    <string name="room_title">room title:</string>
+    <string name="string_optional">optional</string>
+    <string name="room_id">room id:</string>
+    <string name="admin_key">admin key:</string>
+    <string name="room_key">room key:</string>
+    <string name="is_public">is public:</string>
+    <string name="string_register">register</string>
+    <string name="reverse_camera">reverse camera</string>
+    <string name="hange_up">hangup</string>
 </resources>

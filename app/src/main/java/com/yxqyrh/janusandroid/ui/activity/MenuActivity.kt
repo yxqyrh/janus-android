@@ -51,7 +51,7 @@ class MenuActivity : BaseActivity<ActivityMenuBinding>() {
                                                 startVideoRoomSelectActivity()
                                             }
                                         }
-                                    } ?: showToast("昵称不能为空！")
+                                    } ?: showToast("nickname should not be null！")
                                 }
                             }
                         }
@@ -59,12 +59,12 @@ class MenuActivity : BaseActivity<ActivityMenuBinding>() {
                     MenuEnum.VIDEO_CALL -> {
                         startVideoCallSelectActivity()
                     }
-                    MenuEnum.AUDIO_BRIDGE -> {
-                        startAudioBridgeSelectActivity()
-                    }
-                    MenuEnum.WEB_VIEW -> {
-
-                    }
+//                    MenuEnum.AUDIO_BRIDGE -> {
+//                        startAudioBridgeSelectActivity()
+//                    }
+//                    MenuEnum.WEB_VIEW -> {
+//
+//                    }
                 }
             }
         }
@@ -82,8 +82,8 @@ class MenuActivity : BaseActivity<ActivityMenuBinding>() {
     private enum class MenuEnum(val menuName: String) {
         VIDEO_ROOM("video room"),
         VIDEO_CALL("video call"),
-        AUDIO_BRIDGE("audio bridge"),
-        WEB_VIEW("webView")
+      //  AUDIO_BRIDGE("audio bridge"),
+      //  WEB_VIEW("webView")
     }
 }
 

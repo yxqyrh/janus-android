@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.invoke
 
 object TokenPreferencesRepository {
-    // TODO AES加密
+    // TODO AES encrypt
     private val Context.tokenPreferences by preferencesDataStore("token_preferences")
 
     private val sessionIdPreferencesKey by lazy { longPreferencesKey("session_id") }

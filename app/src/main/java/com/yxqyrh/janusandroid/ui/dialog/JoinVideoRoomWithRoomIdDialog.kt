@@ -21,12 +21,12 @@ class JoinVideoRoomWithRoomIdDialog {
                 textRoom.text = roomId.toString()
 
                 setView(dialogView)
-                setPositiveButton("确定") { _, _ ->
+                setPositiveButton(getString(R.string.OK)) { _, _ ->
                     positiveFun(
                         if (TextUtils.isEmpty(editTextPassword.text)) null else editTextPassword.text.toString()
                     )
                 }
-                setNegativeButton("取消") { _, _ -> }
+                setNegativeButton(getString(R.string.cancel)) { _, _ -> }
                 show()
             }
         }

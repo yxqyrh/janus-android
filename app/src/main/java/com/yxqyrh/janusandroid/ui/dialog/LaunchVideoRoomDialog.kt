@@ -22,7 +22,7 @@ class LaunchVideoRoomDialog {
                 val switchPrivate = dialogView.findViewById<SwitchCompat>(R.id.switch_private)
 
                 setView(dialogView)
-                setPositiveButton("确定") { _, _ ->
+                setPositiveButton(getString(R.string.OK)) { _, _ ->
                     positiveFun(
                         if (TextUtils.isEmpty(editTextTheme.text)) null else editTextTheme.text.toString(),
                         if (TextUtils.isEmpty(editTextRoom.text)) null else editTextRoom.text.toString().toLong(),
@@ -31,7 +31,7 @@ class LaunchVideoRoomDialog {
                         !switchPrivate.isChecked
                     )
                 }
-                setNegativeButton("取消") { _, _ -> }
+                setNegativeButton(getString(R.string.cancel)) { _, _ -> }
                 show()
             }
         }

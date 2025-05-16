@@ -19,9 +19,9 @@ class JoinVideoRoomDialog {
                 val editTextPassword = dialogView.findViewById<EditText>(R.id.edit_text_password)
 
                 setView(dialogView)
-                setPositiveButton("确定") { _, _ ->
+                setPositiveButton(getString(R.string.OK)) { _, _ ->
                     if (TextUtils.isEmpty(editTextRoom.text?.toString()?.trim())) {
-                        showToast("未填写会议号！")
+                        showToast("no room ID！")
                     } else {
                         positiveFun(
                             editTextRoom.text.toString().toLong(),
@@ -29,7 +29,7 @@ class JoinVideoRoomDialog {
                         )
                     }
                 }
-                setNegativeButton("取消") { _, _ -> }
+                setNegativeButton(getString(R.string.cancel)) { _, _ -> }
                 show()
             }
         }

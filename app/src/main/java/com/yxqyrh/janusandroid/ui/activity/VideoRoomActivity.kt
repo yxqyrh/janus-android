@@ -87,8 +87,8 @@ class VideoRoomActivity : BaseVMActivity<ActivityVideoRoomBinding, VideoRoomView
                 (Dispatchers.Main) {
                     binding.buttonAudio.text =
                         when (binding.buttonAudio.text) {
-                            "开启音频" -> "关闭音频"
-                            else -> "开启音频"
+                            "unmute audio" -> "mute audio"
+                            else -> "unmute audio"
                         }
                 }
             }
@@ -115,7 +115,7 @@ class VideoRoomActivity : BaseVMActivity<ActivityVideoRoomBinding, VideoRoomView
                     mViewModel.getSecret()?.let { videoRoomSecret ->
                         mViewModel.listForwarders(videoRoomSecret.secret)
                     } ?: (Dispatchers.Main) {
-                        showEditTextDialog("请输入管理密码", true) { secret ->
+                        showEditTextDialog("please input admin key", true) { secret ->
                             lifecycleScope.launch {
                                 mViewModel.listForwarders(secret)
                             }

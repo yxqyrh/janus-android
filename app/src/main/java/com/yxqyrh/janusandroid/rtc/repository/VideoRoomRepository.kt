@@ -79,7 +79,7 @@ class VideoRoomRepository : RTCRepository() {
         (Dispatchers.IO) {
             roomIdRef.set(room)
             pinRef.set(pin)
-            // 获取协程锁
+            // get coroutine lock
             Mutex().withLock(publisherListRef) {
                 publisherListRef.set(publisherListRef.get().apply {
                     addAll(publisherList)

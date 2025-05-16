@@ -21,7 +21,6 @@ abstract class BaseActivity<B : ViewBinding> : AppCompatActivity() {
         log("ActivityName", this.javaClass.simpleName)
 
         setContentView(binding.root)
-
         initActivity()
     }
 
